@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomato</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/10f26ad342.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="clock-part">
+    <h1 class="title clock__title">Task Name</h1>
+    <p class="state"></p>
+    <div class="clock-container"></div>
+    <div class="clock-buttons">
+      <button title="Start" class="btn-start"><i class="fa-solid fa-play"></i></button>
+      <button title="Done" class="btn-finish"><i class="fa-solid fa-flag-checkered"></i> DONE</button>
+    </div>
+  </section>
+  <section class="todo-part">
+    <h1 class="title todo__title">To-do List</h1>
+    <div class="new-list">
+      <input type="text" class="new-list__input" name="new" placeholder="Enter your task..."/>
+      <button title="Add task" class="btn-plus"><i class="fa-solid fa-plus"></i></button>
+    </div>
+    <div class="error hide">請輸入待辦事項</div>
+    <div class="todo-lists">
+      <div class="lists__title">
+        <h3>Uncompleted</h3>
+        <p class="description">delect</p>
+      </div>
+      <!-- <div class="date">
+        <p>2023.08.09</p>
+      </div> -->
+      <ul class="uncompleted">
+        <!-- <li class="list">
+          <button class="btn-start-small btn-todoStart"><i class="fa-solid fa-play"></i></button>
+          <p class="list-content">to-do list</p>
+          <button class="btn-start-small btn-delect"><i class="fa-solid fa-trash-can" style="color: #e82c2c;"></i></button>
+        </li> -->
+      </ul>
+    </div>
+    <div class="done-lists">
+      <div class="lists__title">
+        <h3>Completed</h3>
+        <p class="description">time</p>
+      </div>
+      <ul class="completed">
+        <li class="list">
+          <sapn class="ok"><i class="fa-solid fa-circle-check"></i></sapn>
+          <p class="list-content">shopping</p>
+          <div class="time">
+            <p class="time-spent">30:00</p>
+            <p class="date">2023.01.01</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+</html>

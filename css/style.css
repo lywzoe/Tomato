@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Noto+Sans+TC:wght@400;500;700&family=Poppins:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+}
+
+body {
+  max-width: 960px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+section {
+  width: 50%;
+  border-radius: 2rem;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.title {
+  margin: 1rem 1.5rem;
+}
+
+.clock-part {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fedace;
+  height: 300px;
+}
+.clock-part .state {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.clock-part .clock-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 4rem;
+  color: #555555;
+}
+.clock-part .clock-buttons {
+  margin-bottom: 1.5rem;
+}
+.clock-part .clock-buttons .btn-start {
+  font-size: 2rem;
+  margin: 0 2.5rem;
+}
+.clock-part .clock-buttons .btn-pause, .clock-part .clock-buttons .btn-finish {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.clock-part .clock-buttons .btn-pause i, .clock-part .clock-buttons .btn-finish i {
+  margin: 0 0.5rem;
+}
+
+.list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.list .list-content {
+  padding: 0.3rem 0.6rem;
+  margin-right: auto;
+}
+
+.todo-part {
+  margin-left: 0.5rem;
+  background-color: #EAF2CE;
+  border: 4px solid #7dac71;
+}
+.todo-part .title {
+  text-align: center;
+}
+.todo-part .new-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1.5rem;
+}
+.todo-part .new-list input {
+  padding: 0.8rem;
+  width: 90%;
+  height: 2.5rem;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+}
+.todo-part .new-list input::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 0.8rem;
+}
+.todo-part .new-list input::-moz-placeholder {
+  color: #999999;
+  font-size: 0.8rem;
+}
+.todo-part .new-list input:-ms-input-placeholder {
+  color: #999999;
+  font-size: 0.8rem;
+}
+.todo-part .new-list input::-ms-input-placeholder {
+  color: #999999;
+  font-size: 0.8rem;
+}
+.todo-part .new-list input::placeholder {
+  color: #999999;
+  font-size: 0.8rem;
+}
+.todo-part .new-list .btn-plus {
+  width: 10%;
+  font-size: 1rem;
+}
+.todo-part .error {
+  margin: 0.5rem 1.5rem 0;
+  color: #D93020;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.todo-part .todo-lists, .todo-part .done-lists {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.5rem 1.5rem;
+}
+.todo-part .todo-lists .lists__title, .todo-part .done-lists .lists__title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.todo-part .todo-lists .lists__title h3, .todo-part .done-lists .lists__title h3 {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 90%;
+  line-height: 1.2rem;
+}
+.todo-part .todo-lists .lists__title .description, .todo-part .done-lists .lists__title .description {
+  font-size: 0.8rem;
+  width: 10%;
+  text-align: center;
+}
+.todo-part .todo-lists .btn-todoStart, .todo-part .done-lists .btn-todoStart {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10%;
+}
+.todo-part .todo-lists .btn-todoStart i, .todo-part .done-lists .btn-todoStart i {
+  font-size: 1rem;
+}
+.todo-part .todo-lists .btn-delect, .todo-part .done-lists .btn-delect {
+  width: 10%;
+  font-size: 1rem;
+}
+.todo-part .todo-lists .ok, .todo-part .done-lists .ok {
+  width: 10%;
+  text-align: center;
+}
+.todo-part .todo-lists .ok .fa-circle-check, .todo-part .done-lists .ok .fa-circle-check {
+  color: #37d752;
+}
+.todo-part .todo-lists .time-spent, .todo-part .done-lists .time-spent {
+  text-align: end;
+  font-size: 0.5rem;
+}
+.todo-part .todo-lists .date, .todo-part .done-lists .date {
+  font-size: 0.5rem;
+  color: #999999;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section {
+    width: 80%;
+  }
+  .todo-part {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  section {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
